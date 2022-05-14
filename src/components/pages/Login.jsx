@@ -1,9 +1,9 @@
 import React from 'react'
-import LoginTemplate from '../templates/LoginTemplate'
+import FooterLogin from '../UI/organisms/FooterLogin'
 
 const Login = () => {
   return (
-    <LoginTemplate />
+    <FooterLogin />
   )
 }
 
