@@ -1,10 +1,12 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 
-const Dashboard = () => {
+const PrincipalTemplate = () => {
   return (
+    <>
     <Outlet />
+    </>
   )
 }
 
-export default Dashboard
+export default PrincipalTemplate

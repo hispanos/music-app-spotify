@@ -4,17 +4,19 @@ import {
     Routes,
     Route,
 } from "react-router-dom";
-import Dashboard from '../containers/Dashboard';
-import Home from '../containers/Home';
-import Login from '../containers/Login';
+import Favorites from '../components/pages/Favorites';
+import Home from '../components/pages/Home';
+import Login from '../components/pages/Login'
+import PrincipalTemplate from '../components/templates/PrincipalTemplate';
 
 const Router = () => {
     return (
         <BrowserRouter>
             <Routes>
                 <Route path="login" element={<Login />} />
-                <Route path="/" element={<Dashboard />}>
+                <Route path="/" element={<PrincipalTemplate />}>
                     <Route index element={<Home />} />
+                    <Route path='favorites' element={<Favorites />} />
                 </Route>
             </Routes>
         </BrowserRouter>
